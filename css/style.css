@@ -1,0 +1,341 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  font-family: Poppins;
+  padding: 40px;
+  overflow-x: hidden;
+}
+
+.action-btn {
+  margin-top: 30px;
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-family: Poppins;
+  border-radius: 15px;
+  border: none;
+  background-image: linear-gradient(to right, #ffa800, #ff3b00);
+  font-weight: 600;
+  box-shadow: 0px 10px 60px #d3d3d3;
+  color: white;
+}
+
+.card {
+  box-shadow: 0px 10px 60px #d3d3d3;
+  padding: 15px;
+  width: 100%;
+  min-height: 450px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+.card-details {
+  padding: 15px;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  font-family: 18px;
+  color: grey;
+}
+.card-img {
+  margin-top: 15px;
+  border-radius: 15px;
+  width: 260px;
+  height: auto;
+  box-shadow: 0px 0px 10px #d3d3d3;
+}
+
+.dynamic-txt li {
+  list-style: none;
+  font-weight: 600;
+  position: relative;
+  top: 0px;
+  font-size: 30px;
+  animation: slide 12s steps(4) infinite;
+}
+.dynamic-txt li span {
+  position: relative;
+}
+.dynamic-txt li span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  border-left: 3px solid red;
+  background-color: white;
+  top: 0px;
+  height: 100%;
+  animation: typing 3s steps(10) infinite;
+}
+
+.image-container {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar i {
+  position: relative;
+  left: 40px;
+  top: 25px;
+  z-index: 20;
+  color: grey;
+}
+
+#loading {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.name {
+  background-image: linear-gradient(to right, #ffa800, #ff3b00);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.name-text {
+  font-size: 65px;
+  line-height: 80px;
+}
+
+.navbar {
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  z-index: 15;
+  left: 0px;
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+}
+.navbar-menu ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+.navbar-menu {
+  width: 0px;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  overflow: hidden;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #ffa800, #ff3b00);
+  color: white;
+  font-size: 25px;
+  font-family: Poppins;
+}
+.navbar-in {
+  animation: slideIn 1.5s forwards;
+}
+.navbar-out {
+  animation: slideOut 1.5s forwards;
+}
+
+.profile_img {
+  object-fit: cover;
+  position: relative;
+  left: 0px;
+  width: 600px;
+  height: 500px;
+}
+.projects {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+.project-name {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.reason-card {
+  background-color: #003366;
+  min-height: 350px;
+  padding: 25px;
+  padding-top: 45px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.reason-card-container {
+  border-radius: 15px;
+  min-width: 250px;
+  height: fit-content;
+  min-height: 250px;
+  background-color: #003f7d;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px #003366;
+  margin-bottom: 35px;
+}
+.reason-card-image {
+  display: block;
+  margin-bottom: 25px;
+  color: orange;
+}
+.reason-card-desc {
+  text-align: center;
+  color: white;
+}
+
+.summary-text {
+  font-weight: 600;
+}
+.skill-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-top: 15px;
+}
+.skill-text {
+  padding: 15px;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 500;
+  color: grey;
+}
+.skill-more-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.skill-language-container {
+  padding: 30px;
+  overflow: hidden;
+}
+.skill-language-container div {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.skill-icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toast-notification {
+  width: 250px;
+  height: 50px;
+  position: relative;
+  font-family: Poppins;
+  font-weight: 800;
+  border-radius: 5px;
+  border: 2px solid orange;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 10px 60px #d3d3d3;
+  overflow: hidden;
+}
+
+.wrapper {
+  margin-top: 60px;
+  display: inline-flex;
+}
+.wrapper .static-txt {
+  font-size: 30px;
+  font-weight: 600;
+}
+.wrapper .dynamic-txt {
+  margin-left: 15px;
+  line-height: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: turquoise; */
+  height: fit-content;
+  margin-bottom: 15px;
+}
+.user-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 500;
+  color: grey;
+}
+
+@keyframes slide {
+  100% {
+    top: -180px;
+  }
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0px 60px 0px 20px;
+  }
+}
+@keyframes slideIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes slideOut {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}

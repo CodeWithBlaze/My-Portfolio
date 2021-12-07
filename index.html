@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom js and css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/app.js"></script>
+    <!-- google font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- animated.css for animation -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- font awesome for icons -->
+    <script src="https://use.fontawesome.com/ffef7271b3.js"></script>
+    <!-- lottie files for preloader -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="./js/jquery.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- navigation for mobile -->
+    <nav id="navbar">
+        <div class="navbar">
+            <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="toggleNavbar()"></i>
+            <div class="navbar-menu" id="navbar-menu">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Experience</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+
+    <!-- dynamic text info -->
+    <section>
+        <div class="wrapper">
+            <div class="static-txt">I am a</div>
+            <ul class="dynamic-txt">
+                <li><span class="name">Student</span></li>
+                <li><span class="name">Developer</span></li>
+                <li><span class="name">Designer</span></li>
+                <li><span class="name">Programmer</span></li>
+            </ul>
+            </div>
+    </section>
+
+    <!-- Main Image -->
+    <div class="image-container">
+        <img src = "./asset/profilepic.png" class="profile_img">
+    </div>
+
+    <!-- Portfolio info -->
+    <div class="user-info">
+        <h2 class="name-text">Hi, I am <br><span class="name">Sagnik</span></h2>
+    </div>
+    <div class="user-description">
+        <desc class="user-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        </desc>
+        <!-- Resume download button -->
+        <button class="action-btn">Resume</button>
+    </div>
+
+
+
+    <!-- Portfolio Projects -->
+    <div class="toast-notification" id="projects">
+        <label class="toast-text">PROJECTS</label>
+    </div>
+    <section class="projects">
+        <div class="card card-animated">
+            <img src="asset/cheatsheet.png" class="card-img">
+            <desc class="card-details">
+                <h4 class="project-name">Cheatsheet</h4>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </desc>
+            <a href="#">View Project</a>
+        </div>
+        <div class="card card-animated">
+            <img src="asset/tech.png" class="card-img">
+            <desc class="card-details">
+                <h4 class="project-name">Talk Of Tech</h4>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </desc>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Skills -->
+    <div class="toast-notification" id="projects">
+        <label class="toast-text">SKILLS</label>
+    </div>
+    <section class="projects">
+        <div class="card">
+            <h3 class="project-name">Web Developement</h3>
+            <img src="asset/image2.svg" class="skill-icon">
+            <p class="skill-text">
+                Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
+                Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
+            </p>
+            <details class="skill-language-container">
+                <summary class="summary-text">
+                    View Languages
+                </summary>
+                <div>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/html-5.png">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/css-3.png">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/js-file.png">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/physics.png">
+                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/brands.png">
+                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                </div>
+            </details>
+        </div>
+        <div class="card">
+            <h3 class="project-name">Programming</h3>
+            <img src="asset/image1.svg" class="skill-icon">
+            <p class="skill-text">
+                Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
+                Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
+            </p>
+            <details class="skill-language-container">
+                <summary class="summary-text">
+                    View Languages
+                </summary>
+                <div>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/java.png">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/python.png">
+                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/server.png">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/nodejs.svg">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/letter-c.png">
+                        <progress id="file" value="60" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    
+                </div>
+            </details>
+        </div>
+        <div class="card">
+            <h3 class="project-name">Web Design UI/UX</h3>
+            <img src="asset/image3.svg" class="skill-icon">
+            <p class="skill-text">
+                Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
+                Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
+            </p>
+            <details class="skill-language-container">
+                <summary class="summary-text">
+                    View Languages
+                </summary>
+                <div>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/java.png">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/python.png">
+                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/server.png">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/nodejs.svg">
+                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                    <aside class="skill-icon-container">
+                        <img class="skill-more-icon" src="asset/letter-c.png">
+                        <progress id="file" value="60" max="100"  class="progress"> 32% </progress>
+                    </aside>
+                </div>
+            </details>
+        </div>
+    </section>
+
+
+
+    <!-- Reasons for Hiring -->
+    <div class="toast-notification" id="projects">
+        <label class="toast-text">Reasons</label>
+    </div>
+    <section class="projects">
+        <div class="card reason-card">
+            <div class="reason-card-container">
+                <i class="fa fa-grav fa-3x reason-card-image" aria-hidden="true"></i>
+                <desc class="reason-card-desc">
+                    Easy to use and user friendly Layouts
+                </desc>
+            </div>
+            <div class="reason-card-container">
+                <i class="fa fa-tasks fa-3x reason-card-image" aria-hidden="true"></i>
+                <desc class="reason-card-desc">
+                    Fast and Responsive website
+                </desc>
+            </div>
+            <div class="reason-card-container">
+                <i class="fa fa-user-secret fa-3x reason-card-image" aria-hidden="true"></i>
+                <desc class="reason-card-desc">
+                    Secure and Reliable website
+                </desc>
+            </div>
+            <div class="reason-card-container">
+                <i class="fa fa-credit-card fa-3x reason-card-image" aria-hidden="true"></i>
+                <desc class="reason-card-desc">
+                    Affordable with Best Product
+                </desc>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Preloader animation -->
+    <div id="loading">
+        <lottie-player src="asset/loading.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop skip autoplay></lottie-player>
+    </div>
+</body>
+</html>
