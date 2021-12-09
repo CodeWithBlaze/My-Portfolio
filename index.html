@@ -31,10 +31,10 @@
     <nav id="navbar">
         <div class="navbar">
             <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="toggleNavbar()"></i>
-            <div class="navbar-menu" id="navbar-menu">
+            <div id="navbar-menu">
                 <ul>
                     <li><a href="">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="">Skills</a></li>
                     <li><a href="">Experience</a></li>
                 </ul>
@@ -47,7 +47,7 @@
     <!-- dynamic text info -->
     <section>
         <div class="wrapper">
-            <div class="static-txt">I am a</div>
+            <div>I am a</div>
             <ul class="dynamic-txt">
                 <li><span class="name">Student</span></li>
                 <li><span class="name">Developer</span></li>
@@ -59,15 +59,16 @@
 
     <!-- Main Image -->
     <div class="image-container">
-        <img src = "./asset/profilepic.png" class="profile_img">
+        <img src = "./asset/profilepic.png">
     </div>
 
     <!-- Portfolio info -->
     <div class="user-info">
-        <h2 class="name-text">Hi, I am <br><span class="name">Sagnik</span></h2>
+        <h2>Hi, I am <br>
+        <label class="name">Sagnik</label></h2>
     </div>
     <div class="user-description">
-        <desc class="user-description">
+        <desc>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </desc>
         <!-- Resume download button -->
@@ -78,12 +79,12 @@
 
     <!-- Portfolio Projects -->
     <div class="toast-notification" id="projects">
-        <label class="toast-text">PROJECTS</label>
+        <label>PROJECTS</label>
     </div>
     <section class="projects">
         <div class="card card-animated">
             <img src="asset/cheatsheet.png" class="card-img">
-            <desc class="card-details">
+            <desc>
                 <h4 class="project-name">Cheatsheet</h4>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </desc>
@@ -91,7 +92,7 @@
         </div>
         <div class="card card-animated">
             <img src="asset/tech.png" class="card-img">
-            <desc class="card-details">
+            <desc>
                 <h4 class="project-name">Talk Of Tech</h4>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             </desc>
@@ -102,11 +103,11 @@
 
 
     <!-- Portfolio Skills -->
-    <div class="toast-notification" id="projects">
-        <label class="toast-text">SKILLS</label>
+    <div class="toast-notification" id="skills">
+        <label>SKILLS</label>
     </div>
     <section class="projects">
-        <div class="card">
+        <div class="card  card-animated-skill">
             <h3 class="project-name">Web Developement</h3>
             <img src="asset/image2.svg" class="skill-icon">
             <p class="skill-text">
@@ -141,7 +142,7 @@
                 </div>
             </details>
         </div>
-        <div class="card">
+        <div class="card card-animated-skill">
             <h3 class="project-name">Programming</h3>
             <img src="asset/image1.svg" class="skill-icon">
             <p class="skill-text">
@@ -177,7 +178,7 @@
                 </div>
             </details>
         </div>
-        <div class="card">
+        <div class="card card-animated-skill">
             <h3 class="project-name">Web Design UI/UX</h3>
             <img src="asset/image3.svg" class="skill-icon">
             <p class="skill-text">
@@ -217,38 +218,47 @@
 
 
     <!-- Reasons for Hiring -->
-    <div class="toast-notification" id="projects">
-        <label class="toast-text">Reasons</label>
+    <div class="toast-notification" id="reasons">
+        <label>Reasons</label>
     </div>
     <section class="projects">
         <div class="card reason-card">
             <div class="reason-card-container">
-                <i class="fa fa-grav fa-3x reason-card-image" aria-hidden="true"></i>
-                <desc class="reason-card-desc">
+                <i class="fa fa-grav fa-3x" aria-hidden="true"></i>
+                <desc>
                     Easy to use and user friendly Layouts
                 </desc>
             </div>
             <div class="reason-card-container">
-                <i class="fa fa-tasks fa-3x reason-card-image" aria-hidden="true"></i>
-                <desc class="reason-card-desc">
+                <i class="fa fa-tasks fa-3x" aria-hidden="true"></i>
+                <desc>
                     Fast and Responsive website
                 </desc>
             </div>
             <div class="reason-card-container">
-                <i class="fa fa-user-secret fa-3x reason-card-image" aria-hidden="true"></i>
-                <desc class="reason-card-desc">
+                <i class="fa fa-user-secret fa-3x" aria-hidden="true"></i>
+                <desc>
                     Secure and Reliable website
                 </desc>
             </div>
             <div class="reason-card-container">
-                <i class="fa fa-credit-card fa-3x reason-card-image" aria-hidden="true"></i>
-                <desc class="reason-card-desc">
+                <i class="fa fa-credit-card fa-3x" aria-hidden="true"></i>
+                <desc>
                     Affordable with Best Product
                 </desc>
             </div>
         </div>
     </section>
-
+    <section class="footer">
+      <div class="contact-card email">
+        <label>Email me at</label>
+            <h4>sagniksaha20013<br>@gmail.com</h4>
+        </div>
+      <div class="contact-card linkedin">
+        <label>Check out my Linkedin</label>
+        <h4>LinkedIn</h4>
+      </div>
+    </section>
 
     <!-- Preloader animation -->
     <div id="loading">

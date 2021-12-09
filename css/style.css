@@ -37,7 +37,7 @@ body {
   border-radius: 15px;
   margin-bottom: 40px;
 }
-.card-details {
+.card desc {
   padding: 15px;
   text-align: center;
   font-family: Poppins;
@@ -52,7 +52,24 @@ body {
   height: auto;
   box-shadow: 0px 0px 10px #d3d3d3;
 }
+.contact-card {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  padding: 45px;
+  margin-bottom: 25px;
+}
 
+.contact-card label {
+  font-size: 15px;
+}
+.contact-card h4 {
+  margin-top: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline#003f7d;
+  text-decoration-thickness: 4px;
+}
 .dynamic-txt li {
   list-style: none;
   font-weight: 600;
@@ -75,6 +92,23 @@ body {
   height: 100%;
   animation: typing 3s steps(10) infinite;
 }
+.email {
+  background-image: linear-gradient(to bottom, #fe5858, #ee9617);
+  color: white;
+}
+.linkedin {
+  background-color: #5089c6;
+  color: #001e6c;
+}
+.name {
+  background-image: linear-gradient(to right, #ffa800, #ff3b00);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
 
 .image-container {
   width: 100%;
@@ -84,13 +118,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.navbar i {
-  position: relative;
-  left: 40px;
-  top: 25px;
-  z-index: 20;
-  color: grey;
 }
 
 #loading {
@@ -107,16 +134,7 @@ body {
   overflow: hidden;
 }
 
-.name {
-  background-image: linear-gradient(to right, #ffa800, #ff3b00);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-.name-text {
+.user-info h2 {
   font-size: 65px;
   line-height: 80px;
 }
@@ -131,16 +149,14 @@ body {
   height: 80px;
   overflow: hidden;
 }
-.navbar-menu ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
+.navbar i {
+  position: relative;
+  left: 40px;
+  top: 25px;
+  z-index: 20;
+  color: grey;
 }
-.navbar-menu {
+.navbar div {
   width: 0px;
   position: fixed;
   left: 0px;
@@ -153,6 +169,15 @@ body {
   font-size: 25px;
   font-family: Poppins;
 }
+.navbar div ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
 .navbar-in {
   animation: slideIn 1.5s forwards;
 }
@@ -160,7 +185,7 @@ body {
   animation: slideOut 1.5s forwards;
 }
 
-.profile_img {
+.image-container img {
   object-fit: cover;
   position: relative;
   left: 0px;
@@ -178,6 +203,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   color: black;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -206,12 +232,12 @@ body {
   box-shadow: 0px 0px 20px #003366;
   margin-bottom: 35px;
 }
-.reason-card-image {
+.reason-card-container i {
   display: block;
   margin-bottom: 25px;
   color: orange;
 }
-.reason-card-desc {
+.reason-card-container desc {
   text-align: center;
   color: white;
 }
@@ -259,6 +285,20 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.footer {
+  background-color: #003366;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  z-index: 2;
+  height: fit-content;
+  padding-bottom: 75px;
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .toast-notification {
   width: 250px;
@@ -280,7 +320,7 @@ body {
   margin-top: 60px;
   display: inline-flex;
 }
-.wrapper .static-txt {
+.wrapper div {
   font-size: 30px;
   font-weight: 600;
 }
@@ -338,4 +378,9 @@ body {
   to {
     width: 0%;
   }
+}
+
+/* for larger screen */
+
+@media only screen and (min-width: 692px) {
 }
