@@ -39,5 +39,7 @@ $(window).on('scroll',()=>{
     }
 })
 $('#navbar-menu ul li a').on('click',()=>{
-    $('#navbar-menu').fadeOut(1000)
+    if(window.innerWidth < 961)
+        $('#navbar-menu').fadeOut(1000)
 })
+

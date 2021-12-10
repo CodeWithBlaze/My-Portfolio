@@ -11,3 +11,8 @@ function toggleNavbar(){
     }
         
 }
+window.addEventListener('resize',()=>{
+    if(window.innerWidth > 961){
+        document.getElementById('navbar-menu').style.display = 'block';
+    }
+})

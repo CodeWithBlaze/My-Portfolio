@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- custom js and css -->
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/app.js"></script>
+    <script src="./js/app.js" defer></script>
     <!-- google font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="preconnect">
     <!-- animated.css for animation -->
     <link
-    rel="stylesheet"
+    rel="preconnect"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- font awesome for icons -->
-    <script src="https://use.fontawesome.com/ffef7271b3.js"></script>
+    <script src="https://use.fontawesome.com/ffef7271b3.js" defer></script>
     <!-- lottie files for preloader -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
     <script defer src="./js/jquery.js"></script>
 
     <title>Document</title>
@@ -33,10 +33,10 @@
             <i class="fa fa-bars fa-2x" aria-hidden="true" onclick="toggleNavbar()"></i>
             <div id="navbar-menu">
                 <ul>
-                    <li><a href="">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#reasons">Why Me</a></li>
                 </ul>
             </div>
         </div>
@@ -45,7 +45,7 @@
 
 
     <!-- dynamic text info -->
-    <section>
+    <section id="about">
         <div class="wrapper">
             <div>I am a</div>
             <ul class="dynamic-txt">
@@ -56,24 +56,29 @@
             </ul>
             </div>
     </section>
-
-    <!-- Main Image -->
-    <div class="image-container">
-        <img src = "./asset/profilepic.png">
-    </div>
-
-    <!-- Portfolio info -->
-    <div class="user-info">
-        <h2>Hi, I am <br>
-        <label class="name">Sagnik</label></h2>
-    </div>
-    <div class="user-description">
-        <desc>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        </desc>
-        <!-- Resume download button -->
-        <button class="action-btn">Resume</button>
-    </div>
+    <section class="image-info-container">
+        <!-- Main Image -->
+            <div class="image-container">
+                <img src = "https://drive.google.com/uc?export=view&id=1-P0gfMPRjgKHuz0x4FWTfRr2DvEABEYm">
+            </div>
+        
+        <div>
+            <!-- Portfolio info -->
+            <div class="user-info">
+                    <h2>Hi, I am <br>
+                    <label class="name">Sagnik</label></h2>
+            </div>
+            <div class="user-description">
+                <desc>
+                    I am a full-stack developer and UI/UX designer. I can design and develop user-friendly websites that are completely responsive and work smoothly across all browsers. I am also well familiar with database management and creating secure and reliable backends
+                </desc>
+                <!-- Resume download button -->
+                <button class="action-btn">Resume</button>
+            </div>
+        </div>
+        
+    </section>
+    
 
 
 
@@ -83,18 +88,19 @@
     </div>
     <section class="projects">
         <div class="card card-animated">
-            <img src="asset/cheatsheet.png" class="card-img">
+            <img src="https://drive.google.com/uc?export=view&id=1xUBlrQaZNU1h7bqJZ7Pkza8buiwOSCMw" class="card-img">
             <desc>
                 <h4 class="project-name">Cheatsheet</h4>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <p>Cheatsheet is a website that helps you to create your cheatsheet and share it with the world. It contains
+                    an efficient viewer that will help you efficiently visualize the cheatsheet. Moreover, it is completely free for use</p>
             </desc>
             <a href="#">View Project</a>
         </div>
         <div class="card card-animated">
-            <img src="asset/tech.png" class="card-img">
+            <img src="https://drive.google.com/uc?export=view&id=19ZV4MGuZte7GHdrlvozHK0D-kukULAqw" class="card-img">
             <desc>
                 <h4 class="project-name">Talk Of Tech</h4>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <p>TalkofTech helps you to create your customizable blog just using a blog generator. No need to learn HTML and CSS for blogging. Just share your blog and we take care of the rest</p>
             </desc>
             <a href="#">View Project</a>
         </div>
@@ -109,109 +115,113 @@
     <section class="projects">
         <div class="card  card-animated-skill">
             <h3 class="project-name">Web Developement</h3>
-            <img src="asset/image2.svg" class="skill-icon">
-            <p class="skill-text">
-                Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
-                Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
-            </p>
-            <details class="skill-language-container">
-                <summary class="summary-text">
-                    View Languages
-                </summary>
-                <div>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/html-5.png">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/css-3.png">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/js-file.png">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/physics.png">
-                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/brands.png">
-                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                </div>
-            </details>
+            <div class="skill-image-info-container">
+                <img src="https://drive.google.com/uc?export=view&id=1fJ2-BWpnARZXvDJDL-cUZ0wvA23F8mSN" class="skill-icon">
+                <span>
+                    <p class="skill-text">
+                        I am a full-stack developer with great UI/UX Designing 
+                        skills. I build websites that are secure, easy to use, fast, and responsive across all browsers 
+                    </p>
+                    <details class="skill-language-container">
+                    <summary class="summary-text">
+                            View Languages
+                    </summary>
+                    <div>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1a03srkWQgsD7-qgRYLb1NgCG8L--AebO">
+                                <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=149LCYIiIGTc-3AmaK0vYeiDSDAmJV5pJ">
+                                <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1L2-myU7d4Gd7jPjJHQt_IVS8Qg3tms0v">
+                                <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=156rb00qMQj9qAPJ7ZFmtpACj_qA2XmWF">
+                                <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1sFP1-2JmCCga8JbuExmk6phpwZgIhm5u">
+                                <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                    </div>
+                    </details>
+                </span>
+            </div>    
         </div>
         <div class="card card-animated-skill">
             <h3 class="project-name">Programming</h3>
-            <img src="asset/image1.svg" class="skill-icon">
-            <p class="skill-text">
-                Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
-                Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
-            </p>
-            <details class="skill-language-container">
-                <summary class="summary-text">
-                    View Languages
-                </summary>
-                <div>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/java.png">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/python.png">
-                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/server.png">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/nodejs.svg">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/letter-c.png">
-                        <progress id="file" value="60" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    
-                </div>
-            </details>
+            <div class="skill-image-info-container">
+                <img src="https://drive.google.com/uc?export=view&id=1r5yZ57N4dIsP-Y7R9MdHUbHHh55MXoEb" class="skill-icon">
+                <span>
+                    <p class="skill-text">
+                        I am a programmer with sound knowledge of data structure and algorithms along with good problem-solving skills. I might need time but I can ensure you I will provide you with the most efficient solution to the problem
+                    </p>
+                    <details class="skill-language-container">
+                        <summary class="summary-text">
+                            View Languages
+                        </summary>
+                        <div>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1MFtAIYgRwspufxX8xG_BTLwpkzxAfa9R">
+                                <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1-mco5BrM8fVMgqKWzVO7HziAroLsuN1q">
+                                <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1_xXQ2mTPA7yPvKT00y3-WzZJx7mRYFTz">
+                                <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1ptK7Gq2BT3CIp9Dgo_rQYoKDaUfk5TGW">
+                                <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1FiJGojZfFdq_Km8D5YeC24-_87cgT0sg">
+                                <progress id="file" value="60" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                            
+                        </div>
+                    </details>
+                </span>
+            </div>
         </div>
         <div class="card card-animated-skill">
             <h3 class="project-name">Web Design UI/UX</h3>
-            <img src="asset/image3.svg" class="skill-icon">
-            <p class="skill-text">
-                Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
-                Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
-            </p>
-            <details class="skill-language-container">
-                <summary class="summary-text">
-                    View Languages
-                </summary>
-                <div>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/java.png">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/python.png">
-                        <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/server.png">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/nodejs.svg">
-                        <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
-                    </aside>
-                    <aside class="skill-icon-container">
-                        <img class="skill-more-icon" src="asset/letter-c.png">
-                        <progress id="file" value="60" max="100"  class="progress"> 32% </progress>
-                    </aside>
+            <div class="skill-image-info-container">
+                <img src="https://drive.google.com/uc?export=view&id=1p9XX9g84OhIIvPT4k7HE6RglePCOqcZB" class="skill-icon">
+                <span>
+                    <p class="skill-text">
+                        Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
+                        Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
+                    </p>
+                    <details class="skill-language-container">
+                        <summary class="summary-text">
+                            View Designs
+                        </summary>
+                        <div class="designs">
+                            <img src="https://drive.google.com/uc?export=view&id=1bwFHwfgTBatJYqXH0q_2SUjbaITsYKk8">
+                        </div>
+                        <div class="designs">
+                            <img src="https://drive.google.com/uc?export=view&id=1cKESsJQlBgk8BKXSAUU9kBn2Sn8wduyK">
+                        </div>
+                        <div class="designs">
+                            <img src="https://drive.google.com/uc?export=view&id=1j2wZyntu_4M0clAAf4ow1rN9NTdyezYN">
+                        </div>
+                        <div class="designs">
+                            <img src="https://drive.google.com/uc?export=view&id=1WqatreKR3XzGgtZ0FQQbuOySl8lFLFs7">
+                        </div>
+                        <div class="designs">
+                            <img src="https://drive.google.com/uc?export=view&id=1xUBlrQaZNU1h7bqJZ7Pkza8buiwOSCMw">
+                        </div>
+                    </details>
+                </span>
                 </div>
-            </details>
         </div>
     </section>
 
@@ -252,12 +262,16 @@
     <section class="footer">
       <div class="contact-card email">
         <label>Email me at</label>
-            <h4>sagniksaha20013<br>@gmail.com</h4>
+            <h4><a href="mailto:sagniksaha20013@gmail.com">sagniksaha20013<br>@gmail.com</a></h4>
         </div>
       <div class="contact-card linkedin">
         <label>Check out my Linkedin</label>
-        <h4>LinkedIn</h4>
+        <h4><a href="https://www.linkedin.com/in/sagnik-saha-26a845221/">LinkedIn</a></h4>
       </div>
+      <div class="contact-card email">
+        <label>Follow me on</label>
+            <h4><a href="https://github.com/CodeWithBlaze">Github to see<br>my projects</a></h4>
+        </div>
     </section>
 
     <!-- Preloader animation -->

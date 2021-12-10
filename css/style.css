@@ -7,7 +7,7 @@
 body {
   box-sizing: border-box;
   font-family: Poppins;
-  padding: 40px;
+  padding: 10%;
   overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .card {
   box-shadow: 0px 10px 60px #d3d3d3;
-  padding: 15px;
+  padding: 20px;
   width: 100%;
   min-height: 450px;
   height: fit-content;
@@ -48,7 +48,7 @@ body {
 .card-img {
   margin-top: 15px;
   border-radius: 15px;
-  width: 260px;
+  width: 100%;
   height: auto;
   box-shadow: 0px 0px 10px #d3d3d3;
 }
@@ -65,10 +65,20 @@ body {
 }
 .contact-card h4 {
   margin-top: 25px;
+}
+.contact-card h4 a {
+  color: white;
+  cursor: pointer;
   font-weight: 600;
   font-size: 20px;
   text-decoration: underline#003f7d;
   text-decoration-thickness: 4px;
+}
+.designs img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 20px #d3d3d3;
+  margin-bottom: 25px;
 }
 .dynamic-txt li {
   list-style: none;
@@ -111,15 +121,19 @@ body {
 }
 
 .image-container {
+  margin-top: 35px;
   width: 100%;
   height: fit-content;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.image-info-container {
+  display: block;
+}
 #loading {
   position: fixed;
   top: 0px;
@@ -186,9 +200,9 @@ body {
 }
 
 .image-container img {
-  object-fit: cover;
+  object-fit: contain;
   position: relative;
-  left: 0px;
+  left: 30px;
   width: 600px;
   height: 500px;
 }
@@ -285,6 +299,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
 .footer {
   background-color: #003366;
   position: absolute;
@@ -299,7 +314,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.skill-image-info-container {
+  text-align: center;
+}
 .toast-notification {
   width: 250px;
   height: 50px;
@@ -382,5 +399,128 @@ body {
 
 /* for larger screen */
 
-@media only screen and (min-width: 692px) {
+@media only screen and (min-width: 640px) {
+  body {
+    padding: 20%;
+    padding-top: 40px;
+  }
+  .card {
+    padding: 10%;
+    padding-top: 25px;
+  }
+  .reason-card-container {
+    width: 100%;
+  }
+  .skill-icon {
+    width: 200px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .navbar i {
+    display: none;
+  }
+  .navbar div {
+    position: static;
+    display: flex;
+    background-image: none;
+  }
+  #navbar-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 75px;
+    padding-right: 4%;
+  }
+  #navbar-menu ul li {
+    margin-right: 7%;
+  }
+  #navbar-menu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  #navbar-menu ul li a:hover {
+    color: orange;
+  }
+  #navbar-menu {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 1213px) {
+  body {
+    padding: 15%;
+    padding-top: 100px;
+  }
+  .image-info-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .user-info {
+    display: block;
+  }
+  .user-description {
+    display: block;
+    text-align: left;
+  }
+  .action-btn {
+    display: block;
+  }
+  .wrapper {
+    margin-bottom: 30px;
+  }
+  .image-container {
+    margin-top: 0px;
+    width: 3080px;
+  }
+  .image-container img {
+    height: 600px;
+  }
+  .project-name {
+    font-size: 40px;
+  }
+  .reason-card {
+    padding: 45px;
+  }
+  .card {
+    display: block;
+  }
+  .card desc {
+    text-align: left;
+  }
+  .card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #367bfc;
+    color: white;
+  }
+  .skill-text {
+    text-align: left;
+  }
+  .skill-language-container div {
+    flex-direction: column;
+  }
+  .skill-image-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .skill-icon {
+    margin-right: 35px;
+    display: inline;
+  }
+  .summary-text {
+    text-align: left;
+  }
 }
