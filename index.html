@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="I am a full-stack developer and UI/UX designer. I can design and develop user-friendly websites that are completely responsive and work smoothly across all browsers. I am also well familiar with database management and creating secure and reliable backends">
+    <meta name="keywords" content="UI/UX,Designer,Developement,Developer,Web Developement,App Developer">
+    <meta name="author" content="Sagnik Saha">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- custom js and css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 
     <!-- google font Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,9 +27,14 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
-    <script src="./js/jquery.js" defer></script>
+    <script src="jquery.js" defer></script>
 
-    <title>Document</title>
+    <title>Sagnik Saha Portfolio</title>
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/asset/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon-16x16.png">
+    
 </head>
 <body>
     <!-- navigation for mobile -->
@@ -62,7 +70,7 @@
     <section class="image-info-container">
         <!-- Main Image -->
             <div class="image-container">
-                <img src = "https://drive.google.com/uc?export=view&id=1TJQmOiQK0HzAUwxrixsVn-MajHyU_hQT">
+                <img src = "https://drive.google.com/uc?export=view&id=1TJQmOiQK0HzAUwxrixsVn-MajHyU_hQT" alt="Sagnik Saha Image">
             </div>
         
         <div>
@@ -76,7 +84,9 @@
                     I am a full-stack developer and UI/UX designer. I can design and develop user-friendly websites that are completely responsive and work smoothly across all browsers. I am also well familiar with database management and creating secure and reliable backends
                 </desc>
                 <!-- Resume download button -->
-                <button class="action-btn">Resume</button>
+                <a class="action-btn" 
+                href="https://drive.google.com/uc?export=download&id=1ZdjlDbVJBO238t6ZR5ghh1cuKPqHS4sP"
+                download="Resume">Resume</a>
             </div>
         </div>
         
@@ -91,21 +101,21 @@
     </div>
     <section class="projects">
         <div class="card card-animated">
-            <img src="https://drive.google.com/uc?export=view&id=168uS7uKPNyKWGYuLnzrPJ6oeTcTCS7pu" class="card-img">
+            <img src="https://drive.google.com/uc?export=view&id=168uS7uKPNyKWGYuLnzrPJ6oeTcTCS7pu" class="card-img" alt="Cheatsheet Project Image">
             <desc>
                 <h4 class="project-name">Cheatsheet</h4>
                 <p>Cheatsheet is a website that helps you to create your cheatsheet and share it with the world. It contains
                     an efficient viewer that will help you efficiently visualize the cheatsheet. Moreover, it is completely free for use</p>
             </desc>
-            <a href="#">View Project</a>
+            <a href="https://cheatsheet50.netlify.app/">View Project</a>
         </div>
         <div class="card card-animated">
-            <img src="https://drive.google.com/uc?export=view&id=1Wh2LRAmwpVgMGQ8zqR6iEBQNLtIgRhtX" class="card-img">
+            <img src="https://drive.google.com/uc?export=view&id=1Wh2LRAmwpVgMGQ8zqR6iEBQNLtIgRhtX" class="card-img" alt="TalkofTech Project Image">
             <desc>
                 <h4 class="project-name">Talk Of Tech</h4>
                 <p>TalkofTech helps you to create your customizable blog just using a blog generator. No need to learn HTML and CSS for blogging. Just share your blog and we take care of the rest</p>
             </desc>
-            <a href="#">View Project</a>
+            <a href="https://talkoftech.netlify.app/">View Project</a>
         </div>
     </section>
 
@@ -119,7 +129,7 @@
         <div class="card  card-animated-skill">
             <h3 class="project-name">Web Developement</h3>
             <div class="skill-image-info-container">
-                <img src="https://drive.google.com/uc?export=view&id=1fJ2-BWpnARZXvDJDL-cUZ0wvA23F8mSN" class="skill-icon">
+                <img src="https://drive.google.com/uc?export=view&id=1fJ2-BWpnARZXvDJDL-cUZ0wvA23F8mSN" class="skill-icon" alt="Web Developement">
                 <span>
                     <p class="skill-text">
                         I am a full-stack developer with great UI/UX Designing 
@@ -131,23 +141,23 @@
                     </summary>
                     <div>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1a03srkWQgsD7-qgRYLb1NgCG8L--AebO">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1a03srkWQgsD7-qgRYLb1NgCG8L--AebO" alt="HTML">
                                 <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=149LCYIiIGTc-3AmaK0vYeiDSDAmJV5pJ">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=149LCYIiIGTc-3AmaK0vYeiDSDAmJV5pJ" alt="CSS">
                                 <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1L2-myU7d4Gd7jPjJHQt_IVS8Qg3tms0v">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1L2-myU7d4Gd7jPjJHQt_IVS8Qg3tms0v" alt="Javascript">
                                 <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=156rb00qMQj9qAPJ7ZFmtpACj_qA2XmWF">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=156rb00qMQj9qAPJ7ZFmtpACj_qA2XmWF" alt="React">
                                 <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1sFP1-2JmCCga8JbuExmk6phpwZgIhm5u">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1sFP1-2JmCCga8JbuExmk6phpwZgIhm5u" alt="VueJS">
                                 <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
                             </aside>
                     </div>
@@ -158,7 +168,7 @@
         <div class="card card-animated-skill">
             <h3 class="project-name">Programming</h3>
             <div class="skill-image-info-container">
-                <img src="https://drive.google.com/uc?export=view&id=1r5yZ57N4dIsP-Y7R9MdHUbHHh55MXoEb" class="skill-icon">
+                <img src="https://drive.google.com/uc?export=view&id=1r5yZ57N4dIsP-Y7R9MdHUbHHh55MXoEb" class="skill-icon" alt="Programming">
                 <span>
                     <p class="skill-text">
                         I am a programmer with sound knowledge of data structure and algorithms along with good problem-solving skills. I might need time but I can ensure you I will provide you with the most efficient solution to the problem
@@ -169,23 +179,23 @@
                         </summary>
                         <div>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1MFtAIYgRwspufxX8xG_BTLwpkzxAfa9R">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1MFtAIYgRwspufxX8xG_BTLwpkzxAfa9R" alt="Java">
                                 <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1-mco5BrM8fVMgqKWzVO7HziAroLsuN1q">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1-mco5BrM8fVMgqKWzVO7HziAroLsuN1q" alt="Python">
                                 <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1_xXQ2mTPA7yPvKT00y3-WzZJx7mRYFTz">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1_xXQ2mTPA7yPvKT00y3-WzZJx7mRYFTz" alt="C">
                                 <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1ptK7Gq2BT3CIp9Dgo_rQYoKDaUfk5TGW">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1ptK7Gq2BT3CIp9Dgo_rQYoKDaUfk5TGW" alt="NodeJS">
                                 <progress id="file" value="85" max="100"  class="progress"> 32% </progress>
                             </aside>
                             <aside class="skill-icon-container">
-                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1FiJGojZfFdq_Km8D5YeC24-_87cgT0sg">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=1FiJGojZfFdq_Km8D5YeC24-_87cgT0sg" alt="SQL">
                                 <progress id="file" value="60" max="100"  class="progress"> 32% </progress>
                             </aside>
                             
@@ -197,34 +207,88 @@
         <div class="card card-animated-skill">
             <h3 class="project-name">Web Design UI/UX</h3>
             <div class="skill-image-info-container">
-                <img src="https://drive.google.com/uc?export=view&id=1p9XX9g84OhIIvPT4k7HE6RglePCOqcZB" class="skill-icon">
+                <img src="https://drive.google.com/uc?export=view&id=1p9XX9g84OhIIvPT4k7HE6RglePCOqcZB" class="skill-icon" alt="Web Design">
                 <span>
                     <p class="skill-text">
-                        Fugiat commodo anim duis do laboris occaecat dolore anim eiusmod. 
-                        Ex sit tempor dolor enim id veniam magna minim pariatur tempor 
+                        I am a UI/UX designer. I can design simple, fun, user-friendly interfaces.
+                        I am passionate about improving the life others through my designs, and I am constantly learning new things everyday
                     </p>
                     <details class="skill-language-container">
                         <summary class="summary-text">
                             View Designs
                         </summary>
                         <div class="designs">
-                            <img src="https://drive.google.com/uc?export=view&id=1Tk0-MfBA0rLduYi8QcYE3OfYCaABifQD">
+                            <img src="https://drive.google.com/uc?export=view&id=1Tk0-MfBA0rLduYi8QcYE3OfYCaABifQD" alt="Lamborgini Website Design">
                         </div>
                         <div class="designs">
-                            <img src="https://drive.google.com/uc?export=view&id=1NzFB0WkEphMqK7u4KsFHYuZmA6IdmhLf">
+                            <img src="https://drive.google.com/uc?export=view&id=1NzFB0WkEphMqK7u4KsFHYuZmA6IdmhLf" alt="BMW Website Design">
                         </div>
                         <div class="designs">
-                            <img src="https://drive.google.com/uc?export=view&id=1a02w2Q0FwS4RTI4S5vOufWjZgYqjiWz9">
+                            <img src="https://drive.google.com/uc?export=view&id=1a02w2Q0FwS4RTI4S5vOufWjZgYqjiWz9" alt="Cheatsheet Website Design">
                         </div>
                         <div class="designs">
-                            <img src="https://drive.google.com/uc?export=view&id=1V1SDYFbHn7slIMZ3-svGKgl-tS36tdSO">
+                            <img src="https://drive.google.com/uc?export=view&id=1V1SDYFbHn7slIMZ3-svGKgl-tS36tdSO" alt="KnowledgeCave Website Design">
                         </div>
                         <div class="designs">
-                            <img src="https://drive.google.com/uc?export=view&id=1fkoMfyqSh25L95GhgNmgEUlzw4vASSyw">
+                            <img src="https://drive.google.com/uc?export=view&id=1uq1xFM09scBfgK5rDZuRL6d0tiGOHxaP" alt="Skilline Website Design">
                         </div>
                     </details>
                 </span>
                 </div>
+        </div>
+
+
+        <div class="card card-animated-skill">
+            <h3 class="project-name">App Developement</h3>
+            <div class="skill-image-info-container">
+                <img src="https://drive.google.com/uc?export=view&id=13z1xe108QtAYnegh2LoSauS6SEz20jxK" class="skill-icon" alt="App Developement Image">
+                <span>
+                    <p class="skill-text">
+                        I can develop apps that work both on ios and android with user-friendly interfaces. The apps developed will be highly engaging with proper security and scalability 
+                    </p>
+                    <details class="skill-language-container">
+                        <summary class="summary-text">
+                            View Languages
+                        </summary>
+                        <div>
+                            <aside class="skill-icon-container">
+                                <img class="skill-more-icon" src="https://drive.google.com/uc?export=view&id=156rb00qMQj9qAPJ7ZFmtpACj_qA2XmWF" alt="React">
+                                <progress id="file" value="75" max="100"  class="progress"> 32% </progress>
+                            </aside>
+                        </div>
+                    </details>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- workflow process -->
+    <div class="toast-notification" id="workflow">
+        <label>WORKFLOW</label>
+    </div>
+    <section class="projects">
+        <div class="workflow">
+            <div class="workflow-container">
+                <i class="fa fa-list-alt fa-2x" aria-hidden="true"></i>
+                <p>Planning</p>
+            </div>
+            <div class="workflow-container">
+                <i class="fa fa-window-close-o fa-2x" aria-hidden="true"></i>
+                <p>Wireframing</p>
+            </div>
+            <div class="workflow-container">
+                <i class="fa fa-address-card fa-2x" aria-hidden="true"></i>
+                <p>Designing</p>
+            </div>
+            <div class="workflow-container">
+                <i class="fa fa-code fa-2x" aria-hidden="true"></i>
+                <p>Developement</p>
+            </div>
+            <div class="workflow-container">
+                <i class="fa fa-check-square fa-2x" aria-hidden="true"></i>
+                <p>Testing</p>
+            </div>
         </div>
     </section>
 
@@ -262,6 +326,10 @@
             </div>
         </div>
     </section>
+
+    
+
+
     <section class="footer">
       <div class="contact-card email">
         <label>Email me at</label>
@@ -280,7 +348,7 @@
         <h4><a href="https://twitter.com/SagnikS62177985">Twitter to see my work updates</a></h4>
       </div>
     </section>
-
+    
     <!-- Preloader animation -->
     <div id="loading">
         <lottie-player src="asset/loading.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop skip autoplay></lottie-player>

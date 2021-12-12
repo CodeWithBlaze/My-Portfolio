@@ -7,6 +7,7 @@ $(window).on('load',()=>{
 
 $(window).on('scroll',()=>{
     const scrollTop = $(window).scrollTop();
+    
     if(scrollTop>500){
         $('#projects').addClass(SLIDE_LEFT)
         $('.card-animated').addClass(SLIDE_LEFT)
@@ -15,7 +16,16 @@ $(window).on('scroll',()=>{
         $('#projects').removeClass(SLIDE_LEFT)
         $('.card-animated').removeClass(SLIDE_LEFT)
     }
-    if(scrollTop>3988){
+    if(scrollTop>3900){
+        $('.workflow-container').removeClass(FADE_OUT)
+        $('.workflow-container').addClass(FADE_IN)
+    }
+    if(scrollTop<3890){
+        $('.workflow-container').removeClass(FADE_IN)
+        $('.workflow-container').addClass(FADE_OUT)
+    }
+    if(scrollTop>5333){
+        
         $('.reason-card-container').removeClass(FADE_OUT)
         $('.reason-card-container').addClass(FADE_IN)
     }
