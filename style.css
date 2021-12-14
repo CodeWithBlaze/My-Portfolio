@@ -214,6 +214,8 @@ body {
   border-bottom-style: solid;
   border-bottom-color: #367bfc;
   font-weight: 800;
+  font-size: 30px;
+  white-space: nowrap;
 }
 .image-container img {
   object-fit: contain;
@@ -469,7 +471,7 @@ body {
 /* normal ipad size */
 @media only screen and (min-width: 961px) {
   .active {
-    color: orange !important;
+    color: orangered !important;
   }
   .navbar i {
     display: none;
@@ -506,6 +508,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+  .navbar-links {
+    font-weight: 600;
+    font-size: 17px;
   }
 }
 /* desktop or larger screen */

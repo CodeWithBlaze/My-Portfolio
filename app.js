@@ -13,6 +13,8 @@ function toggleNavbar(){
 }
 window.addEventListener('resize',()=>{
     if(window.innerWidth > 961){
-        document.getElementById('navbar-menu').style.display = 'block';
+        const navbar = document.getElementById('navbar-menu')
+        navbar.style.display = 'block';
+        navbar.classList.remove('navbar-out')
     }
 })

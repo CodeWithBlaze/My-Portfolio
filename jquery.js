@@ -74,7 +74,13 @@ $(window).on('scroll',()=>{
     }
 })
 $('#navbar-menu ul li a').on('click',()=>{
-    if(window.innerWidth < 961)
-        $('#navbar-menu').fadeOut(1000)
+    if(window.innerWidth < 961){
+        $.when($('#navbar-menu').fadeOut(1000)).then(()=>{
+            document.getElementById('navbar-menu').classList.remove('navbar-in')
+        })
+        
+        
+    }
+        
 })
 
