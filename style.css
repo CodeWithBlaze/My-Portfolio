@@ -29,7 +29,9 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-
+.active {
+  color: #003f7d !important;
+}
 .card {
   box-shadow: 0px 10px 60px #d3d3d3;
   padding: 20px;
@@ -184,7 +186,8 @@ body {
   z-index: 10;
   overflow: hidden;
   height: 100%;
-  background-image: linear-gradient(to bottom right, #ffa800, #ff3b00);
+  background-color: orangered;
+  /* background-image: linear-gradient(to bottom right, #ffa800, #ff3b00); */
   color: white;
   font-size: 25px;
   font-family: Poppins;
@@ -204,7 +207,14 @@ body {
 .navbar-out {
   animation: slideOut 1.5s forwards;
 }
-
+.navbar-links {
+  color: white;
+  text-decoration: none;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #367bfc;
+  font-weight: 800;
+}
 .image-container img {
   object-fit: contain;
   position: relative;
@@ -458,6 +468,9 @@ body {
 }
 /* normal ipad size */
 @media only screen and (min-width: 961px) {
+  .active {
+    color: orange !important;
+  }
   .navbar i {
     display: none;
   }
@@ -465,6 +478,7 @@ body {
     position: static;
     display: flex;
     background-image: none;
+    background-color: white;
   }
   #navbar-menu ul {
     display: flex;
