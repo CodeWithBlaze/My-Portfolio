@@ -500,7 +500,10 @@ body {
     font-size: 17px;
   }
   .workflow {
-    padding: 70px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 1213px) {
